@@ -21,11 +21,11 @@ cc_prebuilt_library_shared {
                 none: true,
         },
         target: {
-                android_arm64: {
+                android_armx86_64: {
                         srcs: ["vendor.google.wifi_ext@1.0.so"],
                 },
         },
-        compile_multilib: "64",
+        compile_multilib: "both",
         prefer: true,
         soc_specific: true,
 }
@@ -37,11 +37,11 @@ cc_prebuilt_library_shared {
                 none: true,
         },
         target: {
-                android_arm64: {
+                android_armx86_64: {
                         srcs: ["libwifi-pex.so"],
                 },
         },
-        compile_multilib: "64",
+        compile_multilib: "both",
         prefer: true,
         soc_specific: true,
 }
