@@ -21,7 +21,10 @@ cc_prebuilt_library_shared {
                 none: true,
         },
         target: {
-                android_armx86_64: {
+                android_arm64: {
+                        srcs: ["vendor.google.wifi_ext@1.0.so"],
+                },
+                android_arm: {
                         srcs: ["vendor.google.wifi_ext@1.0.so"],
                 },
         },
@@ -37,7 +40,10 @@ cc_prebuilt_library_shared {
                 none: true,
         },
         target: {
-                android_armx86_64: {
+                android_arm64: {
+                        srcs: ["libwifi-pex.so"],
+                },
+                android_arm: {
                         srcs: ["libwifi-pex.so"],
                 },
         },
